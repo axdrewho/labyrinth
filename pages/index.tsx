@@ -5,7 +5,7 @@ import { UserIcon, PlusIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-orange-50/20 flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-uiuc-orange/10 rounded-full blur-3xl"></div>
@@ -20,7 +20,7 @@ export default function Home() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16"
         >
-          <div className="relative mb-8">
+          {/* <div className="relative mb-8">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -30,24 +30,25 @@ export default function Home() {
               <SparklesIcon className="w-4 h-4 inline mr-2" />
               UIUC RESEARCH PLATFORM
             </motion.div>
-          </div>
+          </div> */}
           
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-uiuc-blue via-uiuc-blue-light to-uiuc-orange mb-6 leading-tight"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-20 text-5xl font-bold text-uiuc-blue mb-12 tracking-tight leading-tight"
           >
-            LABYRINTH
+            <span className="text-6xl text-uiuc-blue">LAB</span>
+            <span className="text-5xl text-orange-500 uppercase align-baseline pl-1 tracking-wide">YRINTH</span>
           </motion.h1>
-          
+            
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-gray-700 text-xl leading-relaxed font-medium"
           >
-            Navigate your path to the perfect research collaboration
+            Where research isn't a maze, its a-maze-ing.
           </motion.p>
           
           <motion.p
@@ -118,10 +119,10 @@ export default function Home() {
           transition={{ duration: 1, delay: 1.5 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center space-x-2 text-gray-400 text-sm">
+          {/* <div className="inline-flex items-center space-x-2 text-gray-400 text-sm">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             <span>Advanced AI-Powered Matching</span>
-          </div>
+          </div> */}
         </motion.div>
       </div>
 

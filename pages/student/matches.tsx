@@ -238,7 +238,7 @@ Via LABYRINTH - UIUC Research Platform`);
 
   if (!student) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-orange-50/20 flex items-center justify-center">
+      <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
           <p className="text-gray-600">Student profile not found</p>
         </div>
@@ -247,7 +247,7 @@ Via LABYRINTH - UIUC Research Platform`);
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-orange-50/20">
+    <div className="min-h-screen bg-white from-slate-50 via-blue-50/30 to-orange-50/20">
       <header className="bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
@@ -438,7 +438,7 @@ Via LABYRINTH - UIUC Research Platform`);
                           {match.commonInterests.length > 0 && (
                             <div className="bg-green-50 border border-green-200 rounded-xl p-3">
                               <p className="text-green-800 font-medium text-sm">
-                                🎯 {match.commonInterests.length} shared research interest{match.commonInterests.length > 1 ? 's' : ''}: {match.commonInterests.join(', ')}
+                                 {match.commonInterests.length} shared research interest{match.commonInterests.length > 1 ? 's' : ''}: {match.commonInterests.join(', ')}
                               </p>
                             </div>
                           )}
@@ -499,7 +499,7 @@ Via LABYRINTH - UIUC Research Platform`);
                             <p><strong>Seeking:</strong> {match.professor.preferredStudentLevel.join(', ')}</p>
                             <p><strong>Status:</strong> 
                               <span className={match.professor.lookingForStudents ? 'text-green-600 font-medium' : 'text-red-600'}>
-                                {match.professor.lookingForStudents ? ' Accepting Students ✅' : ' Not Currently Accepting'}
+                                {match.professor.lookingForStudents ? ' Accepting Students' : ' Not Currently Accepting'}
                               </span>
                             </p>
                           </div>
@@ -579,7 +579,7 @@ Via LABYRINTH - UIUC Research Platform`);
                 onClick={() => router.push('/student/onboarding')}
                 className="bg-gradient-to-r from-uiuc-orange to-uiuc-orange-light text-white px-8 py-3 rounded-xl font-bold hover:shadow-lg transition-all duration-300"
               >
-                ✨ Enhance Profile
+                Enhance Profile
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -587,7 +587,7 @@ Via LABYRINTH - UIUC Research Platform`);
                 onClick={() => window.location.reload()}
                 className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-3 rounded-xl font-bold hover:border-gray-300 transition-all duration-300"
               >
-                🔄 Refresh Matches
+                Refresh Matches
               </motion.button>
             </div>
           </div>
