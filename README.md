@@ -1,4 +1,4 @@
-# LABYRINTH 🧭
+# LABYRINTH 
 ### Intelligent Undergraduate Research Matching Platform
 
 *Connecting ambitious students with research opportunities through smart matching algorithms*
@@ -6,7 +6,7 @@
 ![LABYRINTH Homepage](./homepage.png)
 
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Undergraduate research discovery is broken. Students face:
 - **Fragmented platforms**: Handshake, LinkedIn, REU boards, Canvas, email threads, bulletin boards
@@ -18,7 +18,7 @@ Professors struggle with:
 - **Email clutter**: Managing research inquiries alongside teaching commitments
 - **Time constraints**: Limited bandwidth for mentorship matching
 
-## 💡 Solution
+##  Solution
 
 LABYRINTH reimagines undergraduate research discovery through an intelligent, centralized matching platform that connects students and professors based on research interests, skills, availability, and academic compatibility.
 
@@ -29,7 +29,7 @@ LABYRINTH reimagines undergraduate research discovery through an intelligent, ce
 - **Academic Integration**: GPA considerations and academic level compatibility
 - **Availability Matching**: Time commitment and mentorship style alignment
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -47,7 +47,7 @@ npm run dev
 
 Visit `http://localhost:3000` to see the application.
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React, Next.js, TypeScript
 - **Styling**: Tailwind CSS
@@ -55,7 +55,7 @@ Visit `http://localhost:3000` to see the application.
 - **Deployment**: Vercel (recommended)
 - **Data Storage**: Local Storage (development), ready for database integration
 
-## 🧮 Matching Algorithm
+##  Matching Algorithm
 
 LABYRINTH uses an enhanced matching algorithm that calculates compatibility scores based on five key factors:
 
@@ -107,7 +107,7 @@ const weights = {
 - **Professor Priority Boost**: +15 points for interested students (professor view)
 - **Minimum Threshold**: 25% score required for match consideration
 
-## 📊 Semantic Similarity Engine
+##  Semantic Similarity Engine
 
 The platform uses advanced text matching for research alignment:
 
@@ -128,7 +128,7 @@ const synonymMap = {
 - Common words: 70-90%
 - Synonym recognition: 80%
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 labyrinth/
@@ -144,7 +144,7 @@ labyrinth/
 └── public/              # Static assets
 ```
 
-## 🎯 Core Features
+##  Core Features
 
 ### For Students
 - **Profile Creation**: Research interests, skills, GPA, availability
@@ -164,7 +164,7 @@ labyrinth/
 - **Institutional Integration**: Ready for campus-wide deployment
 - **Scalable Architecture**: Multi-university support ready
 
-## 📈 Matching Analytics
+##  Matching Analytics
 
 The platform provides comprehensive matching insights:
 
@@ -178,7 +178,7 @@ export const getMatchingAnalytics = () => ({
 });
 ```
 
-## 📋 Roadmap
+##  Roadmap
 
 ### Phase 1: Core Platform ✅
 - [x] Student/Professor profiles
@@ -204,7 +204,7 @@ export const getMatchingAnalytics = () => ({
 - [ ] Predictive matching success scoring
 - [ ] Automated opportunity suggestions
 
-## 🏫 Institutional Partnership
+##  Institutional Partnership
 
 LABYRINTH is designed for university-wide adoption:
 
