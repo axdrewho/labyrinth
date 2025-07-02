@@ -160,7 +160,7 @@ const ProfessorOnboarding: React.FC = () => {
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="Enter your first name"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -170,13 +170,13 @@ const ProfessorOnboarding: React.FC = () => {
       case 'lastName':
         return (
           <div className="space-y-2">
-            <label className="block text-sm font-semibold text-gray-800">Last Name *</label>
+            <label className="block text-sm font-semibold text-gray-800 ">Last Name *</label>
             <input
               type="text"
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="Enter your last name"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -192,7 +192,7 @@ const ProfessorOnboarding: React.FC = () => {
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="your.email@illinois.edu"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -208,7 +208,7 @@ const ProfessorOnboarding: React.FC = () => {
               value={value || ''}
               onChange={(e) => handleInputChange(field, formatPhone(e.target.value))}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="(217) 555-0123"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -304,7 +304,7 @@ const ProfessorOnboarding: React.FC = () => {
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="University of Illinois at Urbana-Champaign"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -320,7 +320,7 @@ const ProfessorOnboarding: React.FC = () => {
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="Computer Science"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -381,7 +381,7 @@ const ProfessorOnboarding: React.FC = () => {
               rows={4}
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="Describe your research focus, background, and academic interests..."
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -480,7 +480,7 @@ const ProfessorOnboarding: React.FC = () => {
               rows={4}
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="Describe your funding sources, grants, and research support..."
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -498,7 +498,7 @@ const ProfessorOnboarding: React.FC = () => {
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
               onKeyPress={(e) => handleKeyPress(e, sectionIndex)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="8"
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}
@@ -513,7 +513,7 @@ const ProfessorOnboarding: React.FC = () => {
               rows={4}
               value={value || ''}
               onChange={(e) => handleInputChange(field, e.target.value)}
-              className={`w-full px-4 py-3 text-gray-900 border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
               placeholder="Describe your approach to mentoring students..."
             />
             {error && <p className="text-red-500 text-xs">{error}</p>}

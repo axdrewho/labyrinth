@@ -22,10 +22,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/student/matches": [
+    "/auth/signup": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/student/matches.js"
+      "static/chunks/pages/auth/signup.js"
     ],
     "/student/onboarding": [
       "static/chunks/webpack.js",
