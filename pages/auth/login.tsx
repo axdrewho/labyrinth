@@ -93,7 +93,7 @@ export default function Login() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:border-uiuc-blue focus:ring-2 focus:ring-uiuc-blue/20 outline-none transition-all duration-200 text-gray-900"
+                className="w-full px-4 py-3 border bg-white border-gray-300 rounded-xl focus:border-uiuc-blue focus:ring-2 focus:ring-uiuc-blue/20 outline-none transition-all duration-200 text-gray-900"
                 placeholder="your.email@illinois.edu"
               />
             </div>
@@ -109,7 +109,7 @@ export default function Login() {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:border-uiuc-blue focus:ring-2 focus:ring-uiuc-blue/20 outline-none transition-all duration-200 text-gray-900"
+                  className="w-full px-4 py-3 pr-12 border bg-white border-gray-300 rounded-xl focus:border-uiuc-blue focus:ring-2 focus:ring-uiuc-blue/20 outline-none transition-all duration-200 text-gray-900"
                   placeholder="Enter your password"
                 />
                 <button
@@ -148,7 +148,7 @@ export default function Login() {
           </form>
 
           {/* Demo Instructions */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -161,7 +161,7 @@ export default function Login() {
             <p className="text-blue-600 text-xs">
               Any password will work for this demo.
             </p>
-          </motion.div>
+          </motion.div> */}
 
           {/* Sign Up Link */}
           <div className="mt-6 text-center">
