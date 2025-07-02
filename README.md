@@ -4,7 +4,7 @@
 *Connecting ambitious students with research opportunities through smart matching algorithms*
 
 ![LABYRINTH Homepage](./homepage.png)
-*[Screenshot placeholder - Add your homepage screenshot here]*
+
 
 ## 🎯 Problem Statement
 
