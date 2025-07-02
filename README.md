@@ -1,5 +1,5 @@
 # LABYRINTH 
-### Intelligent Undergraduate Research Matching Platform
+### A Research Matching Platform
 
 *Connecting ambitious students with research opportunities through smart matching algorithms*
 
@@ -8,7 +8,7 @@
 
 ##  Problem Statement
 
-Undergraduate research discovery is broken. Students face:
+Research discovery is broken. Students face:
 - **Fragmented platforms**: Handshake, LinkedIn, REU boards, Canvas, email threads, bulletin boards
 - **Information overload**: Difficult to stay informed about relevant opportunities
 - **Cold outreach**: Inefficient email-based application processes
@@ -28,6 +28,9 @@ LABYRINTH reimagines undergraduate research discovery through an intelligent, ce
 - **Mutual Interest System**: Students can express interest; professors see qualified candidates
 - **Academic Integration**: GPA considerations and academic level compatibility
 - **Availability Matching**: Time commitment and mentorship style alignment
+
+## Demo
+[![Watch the video](https://img.youtube.com/vi/FDzp6GrEe70/0.jpg)](https://youtu.be/FDzp6GrEe70)
 
 ##  Quick Start
 
