@@ -107,20 +107,6 @@ const weights = {
 - **Professor Priority Boost**: +15 points for interested students (professor view)
 - **Minimum Threshold**: 25% score required for match consideration
 
-##  Semantic Similarity Engine
-
-The platform uses advanced text matching for research alignment:
-
-```typescript
-// Example synonym mapping
-const synonymMap = {
-  'artificial intelligence': ['ai', 'machine learning', 'deep learning'],
-  'data science': ['analytics', 'statistics', 'machine learning'],
-  'neuroscience': ['neural', 'brain', 'cognitive science'],
-  'robotics': ['autonomous systems', 'mechatronics']
-  // ... expanded domain coverage
-};
-```
 
 **Similarity Scoring**:
 - Exact match: 100%
@@ -192,13 +178,13 @@ export const getMatchingAnalytics = () => ({
 - [ ] Advanced analytics dashboard
 - [ ] Email notification system
 
-### Phase 3: Scale & Integration 
+### Phase 3: Scale & Integration (Ongoing)
 - [ ] Database integration (PostgreSQL/MongoDB)
 - [ ] University SSO integration
 - [ ] Multi-institution support
 - [ ] Mobile application
 
-### Phase 4: AI Enhancement 
+### Phase 4: AI Enhancement (Future Scope)
 - [ ] Machine learning recommendation engine
 - [ ] Natural language processing for research descriptions
 - [ ] Predictive matching success scoring
