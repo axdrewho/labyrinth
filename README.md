@@ -180,25 +180,25 @@ export const getMatchingAnalytics = () => ({
 
 ##  Roadmap
 
-### Phase 1: Core Platform ✅
+### Phase 1: Core Platform 
 - [x] Student/Professor profiles
 - [x] Matching algorithm implementation
 - [x] Interest tracking system
 - [x] Basic analytics
 
-### Phase 2: Enhanced Features 🚧
+### Phase 2: Enhanced Features 
 - [ ] Real-time messaging system
 - [ ] Application workflow management
 - [ ] Advanced analytics dashboard
 - [ ] Email notification system
 
-### Phase 3: Scale & Integration 📅
+### Phase 3: Scale & Integration 
 - [ ] Database integration (PostgreSQL/MongoDB)
 - [ ] University SSO integration
 - [ ] Multi-institution support
 - [ ] Mobile application
 
-### Phase 4: AI Enhancement 🔮
+### Phase 4: AI Enhancement 
 - [ ] Machine learning recommendation engine
 - [ ] Natural language processing for research descriptions
 - [ ] Predictive matching success scoring
