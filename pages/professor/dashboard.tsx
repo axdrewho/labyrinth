@@ -386,7 +386,7 @@ ${professor?.email}`);
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${getScoreColor(match.score)}`}>
+                      <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium text-black ${getScoreColor(match.score)}`}>
                         <CheckBadgeIcon className="w-4 h-4 mr-1" />
                         {formatScore(match.score)} Match
                       </div>

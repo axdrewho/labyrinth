@@ -23,7 +23,7 @@ const sections = [
     id: 'research',
     title: 'Research & Expertise',
     subtitle: 'Your research focus and areas',
-    fields: ['researchAreas', 'requiredSkills', 'fundingHistory', 'labSize']
+    fields: ['researchAreas', 'requiredSkills', /*'fundingHistory',*/ 'labSize']
   },
   {
     id: 'mentorship',
@@ -124,7 +124,7 @@ const ProfessorOnboarding: React.FC = () => {
         bio: answers.bio,
         researchAreas: answers.researchAreas || [],
         publications: [],
-        fundingHistory: answers.fundingHistory,
+        /*fundingHistory: answers.fundingHistory,*/
         labSize: parseInt(answers.labSize) || 0,
         mentorshipStyle: answers.mentorshipStyle,
         lookingForStudents: answers.lookingForStudents === 'Yes, I am actively seeking students',
@@ -472,20 +472,20 @@ const ProfessorOnboarding: React.FC = () => {
           </div>
         );
 
-      case 'fundingHistory':
-        return (
-          <div className="space-y-2">
-            <label className="block text-sm font-semibold text-gray-800">Funding History *</label>
-            <textarea
-              rows={4}
-              value={value || ''}
-              onChange={(e) => handleInputChange(field, e.target.value)}
-              className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
-              placeholder="Describe your funding sources, grants, and research support..."
-            />
-            {error && <p className="text-red-500 text-xs">{error}</p>}
-          </div>
-        );
+      // case 'fundingHistory':
+      //   return (
+      //     <div className="space-y-2">
+      //       <label className="block text-sm font-semibold text-gray-800">Funding History *</label>
+      //       <textarea
+      //         rows={4}
+      //         value={value || ''}
+      //         onChange={(e) => handleInputChange(field, e.target.value)}
+      //         className={`w-full px-4 py-3 text-gray-900 bg-white border-2 rounded-lg focus:ring-2 focus:ring-uiuc-blue outline-none transition-all duration-300 resize-none ${error ? 'border-red-400' : 'border-gray-300 focus:border-uiuc-blue'}`}
+      //         placeholder="Describe your funding sources, grants, and research support..."
+      //       />
+      //       {error && <p className="text-red-500 text-xs">{error}</p>}
+      //     </div>
+      //   );
 
       case 'labSize':
         return (
@@ -726,7 +726,7 @@ const ProfessorOnboarding: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4 }}
-                      className={field === 'ethnicity' || field === 'researchAreas' || field === 'requiredSkills' || field === 'bio' || field === 'fundingHistory' || field === 'mentorshipStyle' || field === 'title' || field === 'preferredStudentLevel' || field === 'lookingForStudents' ? 'md:col-span-2' : ''}
+                      className={field === 'ethnicity' || field === 'researchAreas' || field === 'requiredSkills' || field === 'bio' || /*field === 'fundingHistory' ||*/ field === 'mentorshipStyle' || field === 'title' || field === 'preferredStudentLevel' || field === 'lookingForStudents' ? 'md:col-span-2' : ''}
                     >
                       {renderField(field, sectionIndex)}
                     </motion.div>

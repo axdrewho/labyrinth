@@ -97,7 +97,7 @@ export default function StudentMatches() {
 
       let professors = JSON.parse(localStorage.getItem('labyrinth_professors') || '[]');
       
-      if (professors.length === 0) {
+      if (professors.length==0) {
         const mockProfessors: Professor[] = [
           {
             id: 'prof1',
@@ -112,7 +112,7 @@ export default function StudentMatches() {
             title: 'Associate Professor',
             researchAreas: ['Artificial Intelligence', 'Machine Learning', 'Computer Vision'],
             publications: ['Deep Learning for Medical Imaging', 'Neural Networks in Healthcare'],
-            fundingHistory: 'NSF CAREER Award ($500K), NIH R01 ($1.2M), Google Research Grant ($150K)',
+            /*fundingHistory: 'NSF CAREER Award ($500K), NIH R01 ($1.2M), Google Research Grant ($150K)',*/
             labSize: 8,
             mentorshipStyle: 'Hands-on guidance with structured learning path',
             lookingForStudents: true,
@@ -135,7 +135,7 @@ export default function StudentMatches() {
             title: 'Professor',
             researchAreas: ['Robotics', 'Autonomous Systems', 'Machine Learning'],
             publications: ['Autonomous Navigation in Complex Environments', 'Robotic Learning Systems'],
-            fundingHistory: 'DARPA grant ($2M), NSF grants ($800K), Toyota Research Institute ($1.5M)',
+            /*fundingHistory: 'DARPA grant ($2M), NSF grants ($800K), Toyota Research Institute ($1.5M)',*/
             labSize: 12,
             mentorshipStyle: 'Collaborative approach with independent research opportunities',
             lookingForStudents: true,
@@ -158,7 +158,7 @@ export default function StudentMatches() {
             title: 'Assistant Professor',
             researchAreas: ['Neuroscience', 'Computational Biology', 'Machine Learning'],
             publications: ['Neural Network Models of Brain Function', 'Computational Approaches to Neuroscience'],
-            fundingHistory: 'NIH K99/R00 Award ($750K), Simons Foundation Grant ($300K)',
+            //fundingHistory: 'NIH K99/R00 Award ($750K), Simons Foundation Grant ($300K)',
             labSize: 5,
             mentorshipStyle: 'Structured learning with hands-on lab experience',
             lookingForStudents: true,
@@ -170,8 +170,22 @@ export default function StudentMatches() {
           }
         ];
         
-        localStorage.setItem('labyrinth_professors', JSON.stringify(mockProfessors));
-        professors = mockProfessors;
+        // localStorage.setItem('labyrinth_professors', JSON.stringify(mockProfessors));
+        // professors = mockProfessors;
+
+        // ensure default professors exist without duplicating
+        const storedProfessors: Professor[] = JSON.parse(localStorage.getItem('labyrinth_professors') || '[]');
+
+        const defaultProfessorIds = new Set(['prof1', 'prof2', 'prof3']);
+        const existingProfessorIds = new Set(storedProfessors.map(p => p.id));
+
+        // Filter out defaults that already exist
+        const missingDefaults = mockProfessors.filter(p => !existingProfessorIds.has(p.id));
+
+        // Merge existing + missing defaults
+        const updatedProfessors = [...storedProfessors, ...missingDefaults];
+
+        localStorage.setItem('labyrinth_professors', JSON.stringify(updatedProfessors));
       }
 
       const studentMatches = findMatches(currentStudent, professors);
@@ -387,7 +401,7 @@ Via LABYRINTH - UIUC Research Platform`);
                         </div>
                       </div>
                       <div className="text-right space-y-2">
-                        <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold ${getScoreColor(match.score)}`}>
+                        <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold text-black ${getScoreColor(match.score)}`}>
                           <StarIcon className="w-4 h-4 mr-1" />
                           {formatScore(match.score)} Match
                         </div>

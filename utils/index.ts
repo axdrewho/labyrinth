@@ -428,11 +428,11 @@ export const formatScore = (score: number): string => {
 };
 
 export const getScoreColor = (score: number): string => {
-  if (score >= 85) return 'text-emerald-700 bg-emerald-100 border border-emerald-200';
-  if (score >= 70) return 'text-green-700 bg-green-100 border border-green-200';
-  if (score >= 55) return 'text-yellow-700 bg-yellow-100 border border-yellow-200';
-  if (score >= 40) return 'text-orange-700 bg-orange-100 border border-orange-200';
-  return 'text-red-700 bg-red-100 border border-red-200';
+  if (score >= 85) return 'text-black bg-green-100 border border-green-200';
+  if (score >= 70) return 'text-black bg-green-100 border border-green-200';
+  if (score >= 55) return 'text-black bg-yellow-100 border border-yellow-200';
+  if (score >= 40) return 'text-black bg-orange-100 border border-orange-200';
+  return 'text-black bg-red-100 border border-red-200';
 };
 
 export const validateEmail = (email: string): boolean => {

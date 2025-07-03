@@ -611,9 +611,6 @@ const StudentOnboarding: React.FC = () => {
           <p className="text-gray-600 text-lg">
             Complete your profile to find perfect research matches
           </p>
-          <div className="mt-4 text-sm text-gray-500">
-            💡 Tip: Press <kbd className="px-2 py-1 bg-gray-100 rounded text-xs">Enter</kbd> to move to the next section
-          </div>
         </motion.div>
 
         {/* Form Sections */}

@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/student/matches": "pages/student/matches.js",
-  "/": "pages/index.js",
-  "/auth/login": "pages/auth/login.js",
+  "/student/onboarding": "pages/student/onboarding.js",
   "/professor/dashboard": "pages/professor/dashboard.js",
+  "/student/matches": "pages/student/matches.js",
   "/professor/onboarding": "pages/professor/onboarding.js"
 }
